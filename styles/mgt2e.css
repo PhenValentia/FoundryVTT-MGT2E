@@ -1,0 +1,178 @@
+
+.mgt2e .window-content {
+  height: 100%;
+  padding: 5px;
+  overflow-y: hidden;
+}
+.mgt2e .sheet-header {
+  height: 100px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+}
+.mgt2e .sheet-header .profile-img {
+  flex: 0 0 100px;
+  height: 100px;
+  margin-right: 10px;
+}
+.mgt2e .sheet-header .header-fields {
+  flex: 1;
+  height: 100px;
+}
+.mgt2e .sheet-header h1.charname {
+  height: 50px;
+  padding: 0px;
+  margin: 5px 0;
+  border-bottom: 0;
+}
+.mgt2e .sheet-header h1.charname input {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+.mgt2e .resource {
+  width: 50%;
+  height: 40px;
+  margin-top: 10px;
+  float: left;
+  text-align: center;
+}
+.mgt2e .resource input {
+  width: 100px;
+  height: 28px;
+}
+.mgt2e .tabs {
+  height: 40px;
+  border-top: 1px solid #AAA;
+  border-bottom: 1px solid #AAA;
+}
+.mgt2e .tabs .item {
+  line-height: 40px;
+  font-weight: bold;
+}
+.mgt2e .tabs .item.active {
+  text-decoration: underline;
+  text-shadow: none;
+}
+.mgt2e .sheet-body {
+  overflow: hidden;
+}
+.mgt2e .sheet-body .tab {
+  height: 100%;
+  overflow-y: auto;
+}
+.mgt2e .editor,
+.mgt2e .editor-content {
+  height: 100%;
+}
+.mgt2e .item-list {
+  list-style: none;
+  margin: 7px 0;
+  padding: 0;
+  overflow-y: auto;
+}
+.mgt2e .item-list .item {
+  height: 30px;
+  line-height: 24px;
+  padding: 3px 0;
+  border-bottom: 1px solid #BBB;
+}
+.mgt2e .item-list .item img {
+  flex: 0 0 24px;
+  margin-right: 5px;
+}
+.mgt2e .item-list .item-name {
+  margin: 0;
+}
+.mgt2e .item-list .item-controls {
+  flex: 0 0 36px;
+}
+.mgt2e .cas-header {
+  padding: 5px;
+  margin: 5px 0;
+  background: rgba(0, 0, 0, 0.05);
+  border: 1px solid #AAA;
+  border-radius: 2px;
+  text-align: center;
+  font-weight: bold;
+}
+.mgt2e .cas-header .cas-label {
+  flex: 1.5;
+}
+.mgt2e .cas-header .cas-control {
+  flex: 0 0 20px;
+}
+.mgt2e .cas-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.mgt2e .cas-list li > * {
+  margin: 0 3px;
+  height: 28px;
+  line-height: 24px;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid #AAA;
+}
+.mgt2e .cas-list a.cas-control {
+  flex: 0 0 20px;
+  text-align: center;
+  line-height: 28px;
+  border: none;
+}
+.mgt2e.sheet.actor {
+  min-width: 560px;
+  min-height: 420px;
+}
+.mgt2e.sheet.item {
+  min-width: 460px;
+  min-height: 400px;
+}
+
+
+.mgt2e .sheet-body .records .details  {
+  width: 33.33%;
+  padding-right: 1.66%;
+  min-height: 100px; 
+  float: left;
+}
+.mgt2e .sheet-body .records .finances  {
+  width: 30%;
+  padding-right: 1.66%;
+  min-height: 100px; 
+  float: left;
+}
+.mgt2e .sheet-body .records .relations {
+  width: 33.33%;
+  min-height: 100px; 
+  float: left;
+}
+.mgt2e .sheet-body .records .details-box  {
+  min-height: 240px; 
+  padding: 2px;
+  border: #2e2e2e solid 3px;
+}
+.mgt2e .sheet-body .records .details-table  {
+  min-height: 100px; 
+  border: none;
+}
+.mgt2e .sheet-body .records .relations-input {
+  width:100%;
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+
+
+.mgt2e .sheet-halftrap {
+  border-bottom: 22px solid #2e2e2e;
+  border-left: 0px solid transparent;
+  border-right: 22px solid transparent;
+  height: 0px;
+}

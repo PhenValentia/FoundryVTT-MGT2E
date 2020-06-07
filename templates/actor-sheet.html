@@ -1,0 +1,208 @@
+<form class="{{cssClass}}" autocomplete="off">
+
+    {{!-- Sheet Header --}}
+    <header class="sheet-header">
+        <img class="profile-img" src="{{actor.img}}" data-edit="img" title="{{actor.name}}" height="100" width="100"/>
+        <div class="header-fields">
+            <h1 class="charname"><input name="name" type="text" value="{{actor.name}}" placeholder="Name"/></h1>
+            <div class="resource">
+                <input type="text" name="data.health.value" value="{{data.health.value}}" data-dtype="Number"/>
+                <span> / </span>
+                <input type="text" name="data.health.max" value="{{data.health.max}}" data-dtype="Number"/>
+            </div>
+            <div class="resource">
+                <input type="text" name="data.power.value" value="{{data.power.value}}" data-dtype="Number"/>
+                <span> / </span>
+                <input type="text" name="data.power.max" value="{{data.power.max}}" data-dtype="Number"/>
+            </div>
+        </div>
+    </header>
+
+    {{!-- Sheet Tab Navigation --}}
+    <nav class="sheet-tabs tabs" data-group="primary">
+        <a class="item" data-tab="records">Records</a>
+        <a class="item" data-tab="cas">Characteristics and Skills</a>
+        <a class="item" data-tab="equipment">Equipment</a>
+    </nav>
+
+    {{!-- Sheet Body --}}
+    <section class="sheet-body">
+
+        {{!-- Records Tab --}}
+        <div class="tab records" data-group="primary" data-tab="records">
+
+            {{!-- Personal File --}}
+            <div class="details" data-group="primary">
+                <div class="sheet-halftrap" style="vertical-align: top; width: 80%; padding-left: 10px; padding-right: 3px; padding-top: 3px; padding-bottom: 0px; color: white">
+                    <div style="padding-top: 3px">
+                    PERSONAL FILE
+                    </div>
+                </div>
+                <div class="details-box" data-group="primary">
+                    <table class="details-table">
+                        <tr>
+                            <td>
+                                <b style="width: 90px">AGE:</b>
+                                <input style ="width: 22%" type="text" name="data.details.age" value="{{data.details.age}}" placeholder="{{ localize 'Age' }}"/>
+                                <b style="padding-left: 7px;">RADS:</b>
+                                <input style ="width: 22%" type="text" name="data.details.rads" value="{{data.details.rads}}" placeholder="{{ localize 'Rads' }}"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <b style="width: 90px">SPECIES:</b>
+                                <input type="text" name="data.details.species" value="{{data.details.species}}" placeholder="{{ localize 'Species' }}"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <b style="width: 90px">SPECIES TRAITS:</b>
+                                <input type="text" name="data.details.speciestraits" value="{{data.details.speciestraits}}" placeholder="{{ localize 'Species Traits' }}"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <b style="width: 90px">HOMEWORLD:</b>
+                                <input type="text" name="data.details.homeworld" value="{{data.details.homeworld}}" placeholder="{{ localize 'Homeworld' }}"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <b style="width: 90px">UNIT:</b>
+                                <input type="text" name="data.details.unit" value="{{data.details.unit}}" placeholder="{{ localize 'Unit Name' }}"/>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            {{!-- Finances --}}
+            <div class="finances" data-group="primary">
+                <div class="sheet-halftrap" style="vertical-align: top; width: 80%; padding-left: 10px; padding-right: 3px; padding-top: 3px; padding-bottom: 0px; color: white">
+                    <div style="padding-top: 3px">
+                    FINANCES
+                    </div>
+                </div>
+                <div class="details-box" data-group="primary">
+                    <table class="details-table">
+                        <tr>
+                            <td>
+                                <b style="width: 90px">PENSION:</b>
+                                <input type="text" name="data.finances.pension" value="{{data.finances.pension}}" placeholder="{{ localize 'Pension' }}"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <b style="width: 90px">DEBT:</b>
+                                <input type="text" name="data.finances.debt" value="{{data.finances.debt}}" placeholder="{{ localize 'Debt' }}"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <b style="width: 90px">CASH ON HAND:</b>
+                                <input type="text" name="data.finances.cash" value="{{data.finances.cash}}" placeholder="{{ localize 'Cash' }}"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <b style="width: 90px">MONTHLY SHIP COST:</b>
+                                <input type="text" name="data.finances.monthly" value="{{data.finances.monthly}}" placeholder="{{ localize 'Monthly' }}"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <b style="width: 90px">LIVING COST:</b>
+                                <input type="text" name="data.finances.living" value="{{data.finances.living}}" placeholder="{{ localize 'Living' }}"/>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            {{!-- Relations --}}
+            <div class="relations" data-group="primary">
+                <div class="sheet-halftrap" style="vertical-align: top; width: 80%; padding-left: 10px; padding-right: 3px; padding-top: 3px; padding-bottom: 0px; color: white">
+                    <div style="padding-top: 3px">
+                    RELATIONS
+                    </div>
+                </div>
+                <div class="details-box" data-group="primary">
+                    <table class="details-table">
+                        <tr>
+                            <td>
+                                <textarea rows="13" class="relations-input" type="text" name="data.relations" value="{{data.relations}}" placeholder="{{ localize 'Write Relations Here' }}"></textarea>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div style="clear: both; padding-top: 6px;" class="div-description" data-group="primary">
+                <div class="sheet-halftrap" style="vertical-align: top; width: 40%; padding-left: 10px; padding-right: 3px; padding-top: 3px; padding-bottom: 0px; color: white">
+                    <div style="padding-top: 3px">
+                    DESCRIPTION
+                    </div>
+                </div>
+                <div class="details-box" data-group="primary">
+                {{editor content=data.biography target="data.biography" button=true owner=owner editable=editable}}
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        {{!-- Characteristics and Skills Tab --}}
+        <div class="tab cas" data-group="primary" data-tab="cas">
+            <header class="cas-header flexrow">
+                <span class="cas-key">Attribute Key</span>
+                <span class="cas-value">Value</span>
+                <span class="cas-label">Label</span>
+                <span class="cas-dtype">Data Type</span>
+                <a class="cas-control" data-action="create"><i class="fas fa-plus"></i></a>
+            </header>
+
+            <ol class="cas-list">
+            {{#each data.characteristics as |attr key|}}
+                <li class="cas flexrow" data-attribute="{{key}}">
+                    <input class="cas-key" type="text" name="data.attributes.{{key}}.key" value="{{key}}"/>
+                    {{#if attr.isCheckbox}}
+                    <label class="cas-value checkbox"><input type="checkbox" name="data.attributes.{{key}}.value" {{checked attr.value}}/></label>
+                    {{else}}
+                    <input class="cas-value" type="text" name="data.attributes.{{key}}.value" value="{{attr.value}}" data-dtype="{{attr.dtype}}"/>
+                    {{/if}}
+                    <input class="cas-label" type="text" name="data.attributes.{{key}}.label" value="{{attr.label}}"/>
+                    <select class="cas-dtype" name="data.attributes.{{key}}.dtype">
+                        {{#select attr.dtype}}
+                        {{#each ../dtypes as |t|}}
+                        <option value="{{t}}">{{t}}</option>
+                        {{/each}}
+                        {{/select}}
+                    </select>
+                    <a class="cas-control" data-action="delete"><i class="fas fa-trash"></i></a>
+                </li>
+            {{/each}}
+            </ol>
+        </div>
+
+        {{!-- Equipment Tab --}}
+        <div class="tab items" data-group="primary" data-tab="equipment">
+            <ol class="item-list">
+            {{#each actor.items as |item id|}}
+                <li class="item flexrow" data-item-id="{{item._id}}">
+                    <img src="{{item.img}}" title="{{item.name}}" width="24" height="24"/>
+                    <h4 class="item-name">{{item.name}}</h4>
+                    <div class="item-controls">
+                        <a class="item-control item-edit" title="Edit Item"><i class="fas fa-edit"></i></a>
+                        <a class="item-control item-delete" title="Delete Item"><i class="fas fa-trash"></i></a>
+                    </div>
+                </li>
+            {{/each}}
+            </ol>
+        </div>
+
+        
+    </section>
+</form>
+

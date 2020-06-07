@@ -1,0 +1,22 @@
+{
+  "name": "mgt2e",
+  "title": "Mongoose Traveller 2nd Edition",
+  "description": "A System to play Mongoose Traveller 2nd Edition.",
+  "version": 0.1,
+  "minimumCoreVersion": "0.5.2",
+  "compatibleCoreVersion": "0.5.7",
+  "templateVersion": 2,
+  "author": "PhenValentia",
+  "esmodules": ["module/mgt2e.js"],
+  "styles": ["styles/mgt2e.css"],
+  "packs": [],
+  "languages": [],
+  "gridDistance": 1.5,
+  "gridUnits": "m",
+  "primaryTokenAttribute": "health",
+  "secondaryTokenAttribute": "power",
+  "url": "",
+  "manifest": "",
+  "download": "",
+  "license": "LICENSE.txt"
+}

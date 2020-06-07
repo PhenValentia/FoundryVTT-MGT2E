@@ -1,0 +1,145 @@
+{
+"Actor": {
+  "types": ["character"],
+  "character": {
+    "records": {
+      "biography": "",
+      "details":{
+        "age": "",
+        "rads": 0,
+        "species": "",
+        "speciestraits": "",
+        "homeworld": "",
+        "unit": ""
+      },
+      "finances": {
+        "pension": 0,
+        "debt": 0,
+        "cash": 0,
+        "monthly": 0,
+        "living": 0
+      },
+      "study": {
+        "skill": "",
+        "completed": 0,
+        "target":0
+      },
+      "relations": ""
+    },
+	  "characteristics": {
+      "str": {
+        "value": 7,
+		    "max": 7,
+		    "mod": 0
+      },
+      "dex": {
+        "value": 7,
+		    "max": 7,
+		    "mod": 0
+      },
+      "end": {
+        "value": 7,
+	      "max": 7,
+		    "mod": 0
+      },
+      "int": {
+        "value": 7,
+		    "max": 7,
+    		"mod": 0
+      },
+      "edu": {
+        "value": 7,
+		    "max": 7,
+		    "mod": 0
+      },
+      "soc": {
+        "value": 7,
+		    "max": 7,
+		    "mod": 0
+      }
+    },
+	  "skills": {
+		  "adm": {
+            "value": -3
+          },
+		  "adv": {
+            "value": -3
+          },
+		  "an1": {
+            "value": -3,
+            "spec": "None"
+          },
+		  "an2": {
+            "value": -3,
+            "spec": "None"
+          },
+		  "an3": {
+            "value": -3,
+            "spec": "None"
+          },
+		  "at1": {
+            "value": -3,
+            "spec": "None"
+          },
+		  "at2": {
+            "value": -3,
+            "spec": "None"
+          },
+		  "at3": {
+            "value": -3,
+            "spec": "None"
+          },
+		  "ar1": {
+            "value": -3,
+            "spec": "None"
+          },
+		  "ar2": {
+            "value": -3,
+            "spec": "None"
+          },
+		  "ar3": {
+            "value": -3,
+            "spec": "None"
+          },
+		  "ast": {
+            "value": -3
+          },
+		  "bro": {
+            "value": -3
+          },
+		  "car": {
+            "value": -3
+          },
+		  "dec": {
+            "value": -3
+          },
+		  "dip": {
+            "value": -3
+          },
+		  "dri": {
+            "value": -3
+          }
+		},
+    "health": {
+      "value": 10,
+      "min": 0,
+      "max": 10
+    },
+    "power": {
+      "value": 5,
+      "min": 0,
+      "max": 5
+    },
+    "attributes": {}
+  }
+},
+"Item": {
+  "types": ["item"],
+  "item": {
+    "description": "",
+    "quantity": 1,
+    "weight": 0,
+    "attributes": {}
+  }
+}
+}
